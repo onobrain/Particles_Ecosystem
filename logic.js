@@ -104,24 +104,24 @@ function update() {
 
     // Only run the simulation every few frames to reduce computation.
     if (simulationFrame % simulationStep === 0) {
-        // rule(red, green, -1.5);
-        // rule(white, yellow, -1.5);
-        // rule(yellow, yellow, 1);
-        // rule(red, white, 2);
-        // rule(green, green, -1);
-        // rule(yellow, green, 1);
-        // rule(white, white, -1);
-        // rule(white, yellow, -2);
-
-
         rule(red, green, -1.5);
         rule(white, yellow, -1.5);
         rule(yellow, yellow, 1);
-        rule(green, white, -2);
+        rule(red, white, 2);
         rule(green, green, -1);
         rule(yellow, green, 1);
         rule(white, white, -1);
         rule(white, yellow, -2);
+
+
+        // rule(red, green, -1.5);
+        // rule(white, yellow, -1.5);
+        // rule(yellow, yellow, 1);
+        // rule(green, white, -2);
+        // rule(green, green, -1);
+        // rule(yellow, green, 1);
+        // rule(white, white, -1);
+        // rule(white, yellow, -2);
 
                                                                     
     }
